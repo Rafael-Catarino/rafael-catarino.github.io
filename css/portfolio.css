@@ -37,13 +37,12 @@
   }
 
   @media(max-width: 614px) {
-  .portfolio__projects {
-    justify-content: center;
-  }
-  
-  .disappear--614 {
-    display: none;
-  }
-}
-}
+    .portfolio__projects {
+      justify-content: center;
+    }
 
+    .disappear--614 {
+      display: none;
+    }
+  }
+}

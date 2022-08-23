@@ -32,7 +32,7 @@
   flex-direction: row;
 }
 
-.header__list__link{
+.header__list__link {
   transition: color 0.1s;
 }
 
@@ -54,7 +54,6 @@
 
 @media (max-width: 906px) {
 
-  /* Estilo header */
   .header {
     padding: 0px;
     position: fixed;
@@ -97,7 +96,6 @@
 
   @media (max-width: 460px) {
 
-    /* header */
     .header__list__link {
       padding: 20px 90px;
     }
