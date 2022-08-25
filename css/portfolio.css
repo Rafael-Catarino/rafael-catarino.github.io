@@ -14,15 +14,47 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .portfolio__projects__div {
   background-color: #252628;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 10px;
   height: 190px;
-  margin: 10px;
+  margin: 13px;
   width: 280px;
+}
+
+.shopping-cart {
+  background-image: url("../image/shopping-cart.png");
+}
+
+.pokedex {
+  background-image: url("../image/pokedex.png");
+}
+
+.jokenpo {
+  background-image: url("../image/jokenpo.png");
+}
+
+.forca {
+  background-image: url("../image/foto-projeto-forca.png");
+}
+
+.list {
+  background-image: url("../image/todo-list.png");
+}
+
+.pixel-art {
+  background-image: url("../image/projeto-pixel-art-mario.png");
+
+}
+
+.projects {
+  display: none;
 }
 
 @media(max-width: 1199px) {
@@ -31,12 +63,16 @@
   }
 }
 
-@media(max-width: 914px) {
+@media(max-width: 932px) {
   .disappear--914 {
     display: none;
   }
 
-  @media(max-width: 614px) {
+  .projects {
+    display: inline;
+  }
+
+  @media(max-width: 626px) {
     .portfolio__projects {
       justify-content: center;
     }
