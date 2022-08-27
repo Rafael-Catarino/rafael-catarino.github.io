@@ -57,6 +57,11 @@
   display: none;
 }
 
+.come-back {
+  color: #fbfee55d;
+  
+}
+
 @media(max-width: 1199px) {
   .disappear--1200 {
     display: none;
@@ -69,6 +74,7 @@
   }
 
   .projects {
+    color: #fbfee55d;
     display: inline;
   }
 
