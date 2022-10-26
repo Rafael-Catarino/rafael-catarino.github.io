@@ -50,7 +50,10 @@
 
 .pixel-art {
   background-image: url("../image/projeto-pixel-art-mario.png");
+}
 
+.calculator {
+  background-image: url("../image/calculator.png");
 }
 
 .projects {
