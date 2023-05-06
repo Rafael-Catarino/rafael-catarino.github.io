@@ -31,6 +31,8 @@
   align-items: center;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about-me__image {
@@ -74,8 +76,5 @@
       width: 350px;
     }
 
-    .about-me__skills {
-      display: none;
-    }
   }
 }
