@@ -1,7 +1,7 @@
 .contact {
   background-color: #252628;
   color: #fbfee5;
-  padding: 10px;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -79,6 +79,17 @@
   transform: scale(1.05);
 }
 
+.contact__developed-by {
+  border-top: 1px solid #181818;
+  color: #ffffff;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.contact__developed-by span {
+  font-weight: bolder;
+}
+
 @media (max-width: 845px) {
   .contact__social-media {
     align-items: center;
@@ -94,6 +105,11 @@
     .contact__message textarea,
     .contact__message input {
       width: 171;
+    }
+
+    .contact__developed-by p {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

@@ -22,10 +22,6 @@
   right: 15px;
 }
 
-.header__button:hover {
-  color: #fbfee55d;
-}
-
 .header__list {
   display: flex;
   list-style: none;
@@ -72,6 +68,10 @@
   .header__button {
     display: block;
     padding: 8px 0;
+  }
+
+  .header__button--color {
+    color: #fbfee55d;
   }
 
   .header__list__link {
