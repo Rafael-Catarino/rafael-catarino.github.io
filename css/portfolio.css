@@ -56,6 +56,10 @@
   background-image: url("../image/calculator.png");
 }
 
+.conversor-de-numeros {
+  background-image: url("../image/imagem-projeto.png");
+}
+
 .projects {
   display: none;
 }
