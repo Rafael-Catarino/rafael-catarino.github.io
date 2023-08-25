@@ -11,6 +11,10 @@
   width: 100%;
 }
 
+.home--disappear{
+  display: none;
+}
+
 /* .home__button__pages {
   background-color: transparent;
   border: none;
