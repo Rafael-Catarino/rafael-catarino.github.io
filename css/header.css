@@ -6,9 +6,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 0;
-  position: fixed;
+  justify-content: space-around;
+  position: absolute;
+  padding: 12px;
   width: 100%;
 }
 
@@ -18,7 +18,6 @@
   color: #fbfee5;
   display: none;
   font-size: 36px;
-  position: absolute;
   right: 15px;
 }
 
@@ -29,6 +28,7 @@
 }
 
 .header__list__link {
+  font-size: large;
   transition: color 0.1s;
 }
 
@@ -39,8 +39,10 @@
 
 /* class generica para os links do header  */
 .header__link {
+  border: none;
+  background-color: transparent;
   color: #fbfee5;
-  padding: 20px;
+  padding: 16px;
   text-decoration: none;
 }
 
@@ -49,45 +51,53 @@
 }
 
 @media (max-width: 906px) {
-
   .header {
-    padding: 0px;
-    position: fixed;
-  }
-
-  .header__tittle {
-    padding: 10px 0px;
-  }
-
-  .header__list,
-  .header {
-    align-items: unset;
+    align-items: center;
     flex-direction: column;
+  }
+
+  .header__titleAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .header__list {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header__list li {
+    width: 100%;
   }
 
   .header__button {
     display: block;
-    padding: 8px 0;
   }
 
   .header__button--color {
     color: #fbfee55d;
   }
 
+  .header__nav {
+    width: 100%;
+  }
+
   .header__list__link {
+    width: 100%;
     text-align: center;
-    transition: background-color 0.1s;
+    transition: 0.1s;
+    display: block;
+    padding: 12px;
   }
 
   .header__list__link:hover {
     background-color: #fbfee55d;
     text-decoration: none;
     cursor: pointer;
-  }
-
-  .header__list__link {
-    display: block;
-    padding: 15px;
   }
 
   .header__nav--disappear {
@@ -99,5 +109,5 @@
     .header__list__link {
       padding: 20px 90px;
     }
-  }
+  } 
 }
