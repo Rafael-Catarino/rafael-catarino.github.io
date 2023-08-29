@@ -6,25 +6,21 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 95px 0;
+  justify-content: space-evenly;
+  height: calc(100vh - 85px);
   width: 100%;
 }
 
 .home__text {
-  margin: 20px;
-  padding: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
   width: 340px;
 }
 
 .home__title {
   color: #fc6e3d;
-  font-size: 1.9em;
-}
-
-.home__technologies {
-  color: #fbfee55d;
-  text-align: center;
+  font-size: 2.0em;
 }
 
 .container__home__button {
@@ -78,45 +74,89 @@
   width: 23px;
 }
 
-.home__photograph {
+.home__photograph__div1 {
   background-color: #fc6e3d;
-  border-radius: 50%;
-  margin: 20px 0px;
-  text-align: center;
-  width: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 280px;
 }
 
-.home__photograph__div {
+.home__photograph__div2 {
   background-color: #252628;
-  border-radius: 50%;
-  margin: 5px;
+  border-radius: 5px;
   text-align: center;
-  width: 414px;
+  width: 278px;
+  height: 278px;
+}
+
+.home__photograph__div3 {
+  background-color: #252628;
+  text-align: center;
+  transform: rotate(25deg);
+  width: 260px;
+  height: 260px;
+}
+
+.home__photograph__image {
+  transform: rotate(-25deg);
+  width: 200px;
+  padding-top: 10px;
 }
 
 @media (max-width: 906px) {
   .home {
     flex-direction: column-reverse;
-    padding-top: 65px;
   }
 
-  .home__photograph {
-    width: 250px;
+  .home__photograph__div1 {
+    width: 260px;
+    height: 260px;
   }
 
-  .home__photograph__div {
-    width: 235px;
+  .home__photograph__div2 {
+    width: 258px;
+    height: 258px;
+  }
+
+  .home__photograph__div3 {
+    width: 240px;
+    height: 240px;
   }
 
   .home__photograph__image {
-    width: 200px;
+    width: 180px;
   }
 
   @media (max-width: 460px) {
-
     .home__text {
       padding: 0px;
       width: 300px;
     }
+
+    .home__photograph__div1 {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .home__photograph__div2 {
+      width: 198px;
+      height: 198px;
+    }
+  
+    .home__photograph__div3 {
+      width: 180px;
+      height: 180px;
+    }
+  
+    .home__photograph__image {
+      width: 120px;
+    }
+
+    .home__title {
+      font-size: 1.5em;
+    }
+
   }
 }
