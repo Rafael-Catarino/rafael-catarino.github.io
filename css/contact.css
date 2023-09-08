@@ -1,11 +1,16 @@
 .contact {
-  background-color: #252628;
-  color: #fbfee5;
-  padding-top: 10px;
+  background-color: var(--dark-mode);
+  color: var(--light-gray);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 85px;
   text-align: center;
 }
 
 .contact__tittle {
+  color: var(--light-orange);
   margin-top: 30px;
 }
 
@@ -22,7 +27,7 @@
 .contact__email,
 .contact__whatsapp {
   align-items: center;
-  color: #fbfee5;
+  color: var(--light-mode);
   display: flex;
   font-size: smaller;
   justify-content: flex-start;
@@ -63,11 +68,11 @@
 }
 
 .contact__button {
-  background-color: #fc6e3d;
-  box-shadow: 2px 2px 10px #181818;
-  border: 1px solid #31140a;
+  background-color: var(--light-orange);
+  box-shadow: 2px 2px 10px var(--header);
+  border: 1px solid var(--burgundy-red);
   border-radius: 5px;
-  color: #31140a;
+  color: var(--burgundy-red);
   display: block;
   padding: 13px;
   transition: 0.1s all;
@@ -75,15 +80,17 @@
 }
 
 .contact__button:hover {
-  background-color: #fa5f2b;
+  background-color: var(--dark-orange);
   transform: scale(1.05);
 }
 
 .contact__developed-by {
-  border-top: 1px solid #181818;
-  color: #ffffff;
-  margin-top: 40px;
-  padding: 10px;
+  background-color: var(--header);
+  box-shadow: 2px 2px 15px 2px var(--header-transparent);
+  border-top: 1px solid var(--black-border);
+  color: var(--light-mode);
+  bottom: 10px;
+  padding: 4px;
 }
 
 .contact__developed-by span {
@@ -101,7 +108,6 @@
   }
 
   @media (max-width: 460px) {
-
     .contact__message textarea,
     .contact__message input {
       width: 171;
