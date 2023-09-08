@@ -5,7 +5,7 @@
   height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 85px;
+  padding-top: 55px;
   text-align: center;
 }
 
@@ -98,6 +98,11 @@
 }
 
 @media (max-width: 845px) {
+  .contact {
+    justify-content: flex-end;
+    padding: 0px;
+  }
+
   .contact__social-media {
     align-items: center;
     align-content: center;
