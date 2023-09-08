@@ -1,7 +1,24 @@
 * {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+:root {
+  --black-border: black;
+  --header: #181818;
+  --header-transparent: rgba(2, 2, 2, 0.452);
+  --dark-mode: #252628;
+  --light-mode: #fbfee5;
+  --light-orange: #fc6e3d;
+  --dark-orange: #fa5f2b;
+  --burgundy-red: #31140a;
+  --light-gray: #fbfee55d;
+  --purple: #c423ff;
+  --blue: #1d6bff;
+}
+
+.class__generic {
+  display: none !important;
+}

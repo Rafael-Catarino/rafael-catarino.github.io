@@ -1,14 +1,15 @@
 .home {
   align-content: center;
   align-items: center;
-  background-color: #252628;
-  color: #fbfee5;
+  background-color: var(--dark-mode);
+  color: var(--light-mode);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  height: calc(100vh - 85px);
+  height: 100vh;
   width: 100%;
+  padding-top: 85px;
 }
 
 .home__text {
@@ -19,8 +20,8 @@
 }
 
 .home__title {
-  color: #fc6e3d;
-  font-size: 2.0em;
+  color: var(--light-orange);
+  font-size: 2em;
 }
 
 .container__home__button {
@@ -41,7 +42,7 @@
 }
 
 .home__button__div {
-  background-image: linear-gradient(to top, #C423FF, #1D6BFF);
+  background-image: linear-gradient(to top, var(--purple), var(--blue));
   border-radius: 5px;
   cursor: pointer;
   padding: 1px;
@@ -50,7 +51,7 @@
 .home__button__github,
 .home__button__linkedin {
   align-items: center;
-  background-color: #252628;
+  background-color: var(--dark-mode);
   border-radius: 5px;
   border: none;
   display: flex;
@@ -63,7 +64,7 @@
 
 /* class que da cor aos dois botões da home */
 .span-button {
-  background-image: linear-gradient(to top, #C423FF, #1D6BFF);
+  background-image: linear-gradient(to top, var(--purple), var(--blue));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -74,8 +75,19 @@
   width: 23px;
 }
 
+/* @keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
+
 .home__photograph__div1 {
-  background-color: #fc6e3d;
+  /* animation: rotate 2s linear infinite; */
+  border: 2px ridge var(--light-orange);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,24 +95,8 @@
   height: 280px;
 }
 
-.home__photograph__div2 {
-  background-color: #252628;
-  border-radius: 5px;
-  text-align: center;
-  width: 278px;
-  height: 278px;
-}
-
-.home__photograph__div3 {
-  background-color: #252628;
-  text-align: center;
-  transform: rotate(25deg);
-  width: 260px;
-  height: 260px;
-}
-
 .home__photograph__image {
-  transform: rotate(-25deg);
+  /* animation: rotate 2s linear infinite reverse; */
   width: 200px;
   padding-top: 10px;
 }
@@ -111,22 +107,12 @@
   }
 
   .home__photograph__div1 {
-    width: 260px;
-    height: 260px;
-  }
-
-  .home__photograph__div2 {
-    width: 258px;
-    height: 258px;
-  }
-
-  .home__photograph__div3 {
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
   }
 
   .home__photograph__image {
-    width: 180px;
+    width: 150px;
   }
 
   @media (max-width: 460px) {
@@ -139,17 +125,7 @@
       width: 200px;
       height: 200px;
     }
-  
-    .home__photograph__div2 {
-      width: 198px;
-      height: 198px;
-    }
-  
-    .home__photograph__div3 {
-      width: 180px;
-      height: 180px;
-    }
-  
+
     .home__photograph__image {
       width: 120px;
     }
@@ -157,6 +133,5 @@
     .home__title {
       font-size: 1.5em;
     }
-
   }
 }

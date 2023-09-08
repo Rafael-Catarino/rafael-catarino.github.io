@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/aboutMe.css" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/skills.css">
     <title>Portfólio de Programação</title>
   </head>
 
@@ -44,33 +45,30 @@
       <nav class="header__nav header__nav--disappear">
         <ul class="header__list">
           <li>
-            <button id="button__home" class="header__list__link header__link">
-              Início
-            </button>
+            <a class="header__list__link header__link" href="#container__home"
+              >Início</a
+            >
           </li>
           <li>
-            <button
-              id="button__about-me"
+            <a
               class="header__list__link header__link"
+              href="#container__about-me"
+              >Sobre</a
             >
-              Sobre
-            </button>
           </li>
           <li>
-            <button
-              id="button__portfolio"
+            <a
               class="header__list__link header__link"
+              href="#container__portfolio"
+              >Projetos</a
             >
-              Projetos
-            </button>
           </li>
           <li>
-            <button
-              id="button__contact"
+            <a
               class="header__list__link header__link"
+              href="#container__contact"
+              >Contato</a
             >
-              Contato
-            </button>
           </li>
         </ul>
       </nav>
@@ -83,7 +81,8 @@
           <p>Olá, me chamo</p>
           <h1 class="home__title">Rafael dos Santos Catarino.</h1>
           <p>
-            Neste portfólio você encontra alguns dos meus projetos que desenvolvi em cursos e de forma independente.
+            Neste portfólio você encontra alguns dos meus projetos que
+            desenvolvi em cursos e de forma independente.
           </p>
 
           <div class="container__home__button">
@@ -124,73 +123,97 @@
         </div>
 
         <div class="home__photograph__div1">
-          <div class="home__photograph__div2">
-            <div class="home__photograph__div3">
-              <img
-                class="home__photograph__image"
-                src="image/rafael.png"
-                alt="Foto do Rafael"
-              />
-            </div>
-          </div>
+          <img
+            class="home__photograph__image"
+            src="image/rafael.png"
+            alt="Foto do Rafael"
+          />
         </div>
       </section>
 
-    <!-- About me -->
-    <!-- <section id="container__about-me" class="about-me">
+      <!-- About me -->
+      <section id="container__about-me" class="about-me">
         <h2 class="about-me__tittle">Sobre Mim:</h2>
-        <div class="about-me__text">
-          <p class="text"></p>
-        </div>
 
-        <div class="about-me__skills">
-          <h3 class="about-me__skills__tittle">Skills:</h3>
-          <div class="about-me__container__image">
-            <img
-              class="about-me__image"
-              src="image/HTML5-150px.png"
-              alt="image html5"
-            />
-            <img
-              class="about-me__image"
-              src="image/CSS3-150px.png"
-              alt="image css3"
-            />
-            <img
-              class="about-me__image"
-              src="image/JS-150px.png"
-              alt="image javascript"
-            />
-            <img
-              class="about-me__image"
-              src="image/python-150px.png"
-              alt="image bootstrap"
-            />
-            <img
-              class="about-me__image"
-              src="image/java-150px.png"
-              alt="image react"
-            />
-            <img
-              class="about-me__image"
-              src="image/C-150px.png"
-              alt="image git"
-            />
-            <img
-              class="about-me__image"
-              src="image/C++-150px.png"
-              alt="image github"
-            />
-            <img
-              class="about-me__image"
-              src="image/git-150px.png"
-              alt="image git"
-            />
-            <img
-              class="about-me__image"
-              src="image/github-150px.png"
-              alt="image github"
-            />
+        <div class="container__slider">
+          <div class="about-me__text">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <!--Slider-->
+            <div class="slide first">
+              <div class="about-me__questions">
+                <h3 class="about-me__questions__tittle">De onde sou?</h3>
+                <p>Sou Natural de Bangu, Rio de Janeiro, Brasil.</p>
+              </div>
+              <div class="about-me__questions">
+                <h3 class="about-me__questions__tittle">Um pouco sobre mim:</h3>
+                <p>
+                  Sou formado em Administração de Empresa e atualmente estou
+                  passando por uma transição de carreira fazendo o curso de
+                  Análise e Desenvolvimento de Sistema pela Universidade Estácio
+                  de Sá.
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="about-me__questions">
+                <h3 class="about-me__questions__tittle">
+                  Tecnologias que conheço:
+                </h3>
+                <p>
+                  Tenho conhecimento básico nas linguagens: JavaScript, PHP,
+                  Python, C, C++ e Java O.O.
+                </p>
+                <p>
+                  Também possuo conhecimento em: HTML5, CSS3, Git e GitHub,
+                  Sistema Linux, Redes de computadores, Segurança da Informação,
+                  Computação em nuvem, Paradigmas de linguagens de programação e
+                  Pacote Office
+                </p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="about-me__questions">
+                <h3 class="about-me__questions__tittle">
+                  Sobre estágio/trabalho:
+                </h3>
+                <p>
+                  Eu estou estagiando de forma comunitária para a instituição
+                  Casa do Pai, como munitor de robótica.
+                </p>
+                <p>
+                  Nesse estágio estou aprendendo muito a mexer com arduino,
+                  utilizar a impressora 3D, a utilizar a cortadora a laiser...
+                </p>
+              </div>
+              <div class="about-me__questions">
+                <h3 class="about-me__questions__tittle">
+                  Sobre o que gosto de fazer nas horas vagas:
+                </h3>
+                <p>
+                  Eu gosto de fazer trilha, ir a praia, estudar, ver filmes e
+                  animes, ler, fazer exercício físico na praça, entre outras
+                  coisas...
+                </p>
+              </div>
+            </div>
+
+            <!--Navigation auto-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+          </div>
+
+          <div class="manual_navigation">
+            <label for="radio1" class="manual_btn"></label>
+            <label for="radio2" class="manual_btn"></label>
+            <label for="radio3" class="manual_btn"></label>
           </div>
         </div>
 
@@ -199,10 +222,108 @@
             >Curriculum Vitae</a
           >
         </div>
-      </section> -->
+      </section>
 
-    <!-- Portfolio -->
-    <!-- <section id="container__portfolio" class="portfolio">
+      <!-- skills -->
+      <section class="skills">
+          <h3 class="skills__tittle">Skills:</h3>
+          <div class="container__skills__image">
+            <div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/HTML5-150px.png"
+                  alt="image html5"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/CSS3-150px.png"
+                  alt="image css3"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/JS-150px.png"
+                  alt="image javascript"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/php.png"
+                  alt="image github"
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/python-150px.png"
+                  alt="image bootstrap"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/java-150px.png"
+                  alt="image react"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/C-150px.png"
+                  alt="image git"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/C++-150px.png"
+                  alt="image github"
+                />
+              </div>
+            </div>
+            <div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/git-150px.png"
+                  alt="image git"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/github-150px.png"
+                  alt="image github"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/sql.png"
+                  alt="image github"
+                />
+              </div>
+              <div>
+                <img
+                  class="skill__image"
+                  src="image/arduino.png"
+                  alt="image github"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="container__portfolio" class="portfolio">
         <h2 class="portfolio__title">Projetos</h2>
 
         <p class="portfolio__contents">
@@ -253,10 +374,10 @@
 
         <a class="projects" href="projects.html">Mais...</a>
       </section>
-    </main> -->
+    </main>
 
     <!-- Contato -->
-    <!-- <footer id="container__contact" class="contact">
+    <footer id="container__contact" class="contact">
       <h2 class="contact__tittle">Contatos</h2>
       <div class="contact__social-media">
         <div>
@@ -355,7 +476,7 @@
       <div class="contact__developed-by">
         <p>Desenvolvido por: <span>Rafael dos Santos Catarino</span></p>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="script.js"></script>
   </body>
