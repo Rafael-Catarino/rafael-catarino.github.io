@@ -78,9 +78,9 @@
   margin-right: 40px;
 }
 
-.manual_btn:hover {
+/* .manual_btn:hover {
   background-color: var(--light-mode);
-}
+} */
 
 #radio1:checked ~ .first {
   margin-left: 0;
