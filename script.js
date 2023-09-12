@@ -1,7 +1,27 @@
 /*------BOTÃO HAMBURGER HEADER------*/
 const headerButton = document.querySelector(".header__button");
+const title = document.querySelector(".home__title");
 const main = document.querySelector("main");
 const headerNav = document.querySelector(".header__nav");
+const headerA = document.querySelectorAll("a");
+
+for (let i = 0; i < headerA.length; i++) {
+  headerA[i].addEventListener("click", (event) => {
+    const check = document.querySelector(".check");
+    event.target.classList.add("check");
+    check.classList.remove("check");
+  });
+}
+
+const toWriteTittle = () => {
+  const arrTitle = title.innerHTML.split("");
+  title.innerHTML = "";
+  arrTitle.forEach((letter, i) => {
+    setTimeout(() => {
+      title.innerHTML += letter;
+    }, 75 * i);
+  });
+};
 
 headerButton.addEventListener("click", () => {
   const navHeader = document.querySelector(".header__nav");
@@ -40,7 +60,7 @@ const passingTheSlider = () => {
   }
 };
 
-window.onload = passingTheSlider();
+window.onload = [passingTheSlider(), toWriteTittle()];
 
 /*------LENDO UM ARQUIVO DOC------*/
 // const pText = document.querySelector(".text");
