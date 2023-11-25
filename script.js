@@ -60,6 +60,31 @@ const passingTheSlider = () => {
   }
 };
 
+/*------- Botão Tema --------*/
+// const inputCheckboxTheme = document.querySelector(".input__checkbox__theme");
+
+// inputCheckboxTheme.addEventListener("click", () => {
+//   if (inputCheckboxTheme.checked) {
+//     const sectionAll = document.querySelectorAll("section");
+//     sectionAll.forEach((section) => {
+//       section.style.backgroundColor = "var(--light-mode)";
+//       section.style.color = "var(--dark-mode)";
+//     });
+//     console.log("marcou");
+//   } else {
+//     console.log("desmarcou");
+//     document.querySelector("section").style.background = "var(--dark-mode)";
+//   }
+// });
+
+// const buttonTheme = () => {
+//   if (inputCheckboxTheme.checked) {
+//     console.log("marcou");
+//   } else {
+//     console.log("desmarcou");
+//   }
+// };
+
 window.onload = [passingTheSlider(), toWriteTittle()];
 
 /*------LENDO UM ARQUIVO DOC------*/

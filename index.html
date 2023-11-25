@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/footer.css">
     <title>Portfólio de Programação</title>
   </head>
 
@@ -77,6 +78,15 @@
     <!-- Home -->
     <main>
       <section id="container__home" class="home">
+
+        <!-- Botão de mudar tema -->
+        <!-- <div class="home__button__theme">
+          <label for="">
+            <input class="input__checkbox__theme" type="checkbox" name="" id="">
+            <span class="check"></span>
+          </label>
+        </div> -->
+
         <div class="home__text">
           <p>Olá, me chamo</p>
           <h1 class="home__title">Rafael dos Santos Catarino.</h1>
@@ -145,9 +155,15 @@
             <div class="slide first">
               <div class="about-me__questions">
                 <h3 class="about-me__questions__tittle">De onde sou?</h3>
+
+                <div class="about-me__photography">
+                  <img src="./image/cristo-redentor-Bangu-2.jpeg" alt="">
+                  <img src="./image/Bangu-Shopping-Copia-scaled-aspect-ratio-800-600-scaled-b.webp" alt="">
+                </div>
+
                 <p>Sou Natural de Bangu, Rio de Janeiro, Brasil.</p>
               </div>
-              <div class="about-me__questions">
+              <!-- <div class="about-me__questions">
                 <h3 class="about-me__questions__tittle">Um pouco sobre mim:</h3>
                 <p>
                   Sou formado em Administração de Empresa e atualmente estou
@@ -155,7 +171,7 @@
                   Análise e Desenvolvimento de Sistema pela Universidade Estácio
                   de Sá.
                 </p>
-              </div>
+              </div> -->
             </div>
 
             <div class="slide">
@@ -377,7 +393,7 @@
     </main>
 
     <!-- Contato -->
-    <footer id="container__contact" class="contact">
+    <section id="container__contact" class="contact">
       <h2 class="contact__tittle">Contatos</h2>
       <div class="contact__social-media">
         <div>
@@ -473,9 +489,10 @@
           </form>
         </div>
       </div>
-      <div class="contact__developed-by">
+    </section>
+
+    <footer class="footer__developed-by">
         <p>Desenvolvido por: <span>Rafael dos Santos Catarino</span></p>
-      </div>
     </footer>
 
     <script src="script.js"></script>

@@ -1,6 +1,6 @@
 .skills {
   align-items: center;
-  background-color: #252628;
+  background-color: var(--dark-mode);;
   display: flex;
   flex-direction: column;
   height: 100vh;

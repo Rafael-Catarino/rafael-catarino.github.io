@@ -11,6 +11,17 @@
   width: 100%;
 }
 
+.about-me__photography {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-me__photography img {
+  margin: 12px;
+  /* width: 45%;
+  height: 125px; */
+}
+
 .about-me__tittle {
   color: var(--light-orange);
   font-size: 2em;
@@ -45,6 +56,7 @@
   border: 2px dashed var(--header);
   border-radius: 10px;
   color: var(--light-mode);
+  text-align: center;
   margin: 8px;
   padding: 8px;
   width: 500px;
