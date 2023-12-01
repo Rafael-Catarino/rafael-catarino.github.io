@@ -11,15 +11,53 @@
   width: 100%;
 }
 
+.about-me__photography_3,
 .about-me__photography {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.about-me__photography img {
-  margin: 12px;
-  /* width: 45%;
-  height: 125px; */
+.about-me__photography_3 img {
+  height: 65px;
+}
+
+.about-me__photography_2 {
+  display: grid;
+  grid-template-areas:
+    "graduation graduation university adm"
+    "graduation graduation technology technology";
+}
+
+#graduation {
+  background-image: url("../image/formatura-b.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  grid-area: graduation;
+  height: 115px;
+}
+
+#university {
+  background-image: url("../image/estacio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  grid-area: university;
+}
+
+#adm {
+  background-image: url("../image/adm.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  grid-area: adm;
+}
+
+#technology {
+  background-image: url("../image/ADS-b.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  grid-area: technology;
 }
 
 .about-me__tittle {
@@ -59,10 +97,15 @@
   text-align: center;
   margin: 8px;
   padding: 8px;
-  width: 500px;
+  width: 502px;
+}
+
+.about-me__questions p {
+  margin-top: 12px;
 }
 
 .about-me__questions__tittle {
+  margin-bottom: 12px;
   text-align: center;
   color: var(--light-gray);
 }
@@ -106,6 +149,14 @@
   margin-left: -200%;
 }
 
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -400%;
+}
+
 .navigation-auto {
   align-items: flex-end;
   height: 100%;
@@ -137,6 +188,14 @@
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: var(--light-mode);
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: var(--light-mode);
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
   background-color: var(--light-mode);
 }
 
@@ -183,5 +242,10 @@
 
   .navigation-auto {
     margin-top: 5px;
+  }
+
+  .about-me__photography img {
+    height: 50%;
+    width: 50%;
   }
 }

@@ -52,7 +52,7 @@ const passingTheSlider = () => {
 
   function nextImage() {
     count++;
-    if (count >= 4) {
+    if (count >= 6) {
       count = 1;
     }
 
