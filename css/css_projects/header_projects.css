@@ -1,0 +1,49 @@
+.header {
+  align-items: center;
+  background-color: var(--header);
+  border-bottom: 1px solid var(--black-border);
+  box-shadow: 2px 2px 15px 2px var(--header-transparent);
+  display: flex;
+  font-size: larger;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: fixed;
+  justify-content: space-around;
+  padding: 13px;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__tittle__disappear-320px {
+  display: none;
+}
+
+/* class generica para os links do header  */
+.header__link {
+  background-color: transparent;
+  border: none;
+  color: var(--light-mode);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.header__tittle--color {
+  color: var(--light-orange);
+}
+
+@media (max-width: 906px) {
+  .header {
+    padding: 9px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header__titleAndButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+}

@@ -2,7 +2,10 @@
   background-color: var(--dark-mode);
   color: var(--light-gray);
   text-align: center;
-  padding-top: 90px;
+  padding-top: 95px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .portfolio__title {
@@ -33,35 +36,35 @@
 }
 
 .shopping-cart {
-  background-image: url("../image/shopping-cart.png");
+  background-image: url("../../image/shopping-cart.png");
 }
 
 .pokedex {
-  background-image: url("../image/pokedex.png");
+  background-image: url("../../image/pokedex.png");
 }
 
 .jokenpo {
-  background-image: url("../image/jokenpo.png");
+  background-image: url("../../image/jokenpo.png");
 }
 
 .forca {
-  background-image: url("../image/foto-projeto-forca.png");
+  background-image: url("../../image/foto-projeto-forca.png");
 }
 
 .list {
-  background-image: url("../image/todo-list.png");
+  background-image: url("../../image/todo-list.png");
 }
 
 .pixel-art {
-  background-image: url("../image/projeto-pixel-art-mario.png");
+  background-image: url("../../image/projeto-pixel-art-mario.png");
 }
 
 .calculator {
-  background-image: url("../image/calculator.png");
+  background-image: url("../../image/calculator.png");
 }
 
 .conversor-de-numeros {
-  background-image: url("../image/imagem-projeto.png");
+  background-image: url("../../image/imagem-projeto.png");
 }
 
 .projects {
@@ -72,24 +75,8 @@
   color: var(--light-gray);
 }
 
-@media (max-width: 1199px) {
-  .disappear--1200 {
-    display: none;
-  }
-}
-
-@media (max-width: 932px) {
-  .disappear--914 {
-    display: none;
-  }
-
-  @media (max-width: 626px) {
-    .portfolio__projects {
-      justify-content: center;
-    }
-
-    .disappear--614 {
-      display: none;
-    }
+@media (max-width: 626px) {
+  .portfolio__projects {
+    justify-content: center;
   }
 }
