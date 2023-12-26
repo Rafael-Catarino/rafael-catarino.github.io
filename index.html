@@ -81,10 +81,7 @@
 
         <!-- Botão de mudar tema -->
         <!-- <div class="home__button__theme">
-          <label for="">
-            <input class="input__checkbox__theme" type="checkbox" name="" id="">
-            <span class="check"></span>
-          </label>
+          <div></div>
         </div> -->
 
         <div class="home__text">
@@ -148,10 +145,10 @@
         <div class="container__slider">
           <div class="about-me__text">
             <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1" />
-            <input type="radio" name="radio-btn" id="radio2" />
-            <input type="radio" name="radio-btn" id="radio3" />
-            <input type="radio" name="radio-btn" id="radio4" />
+            <input type="radio" name="radio-btn" id="radio1" class="btn-radio"/>
+            <input type="radio" name="radio-btn" id="radio2" class="btn-radio"/>
+            <input type="radio" name="radio-btn" id="radio3" class="btn-radio"/>
+            <input type="radio" name="radio-btn" id="radio4" class="btn-radio"/>
             <!-- <input type="radio" name="radio-btn" id="radio5" /> -->
 
             <!--Slider-->
@@ -248,22 +245,6 @@
                 </p>
               </div>
             </div>
-
-            <!-- <div class="slide">
-                <div class="about-me__questions">
-                  <h3 class="about-me__questions__tittle">
-                    Sobre estágio/trabalho:
-                  </h3>
-                  <p>
-                    Eu estou estagiando de forma comunitária para a instituição
-                    Casa do Pai, como munitor de robótica.
-                  </p>
-                  <p>
-                    Nesse estágio estou aprendendo muito a mexer com arduino,
-                    utilizar a impressora 3D, a utilizar a cortadora a laiser...
-                  </p>
-                </div>
-            </div> -->
 
     
             <!--Navigation auto-->
@@ -399,45 +380,239 @@
         </p>
 
         <div class="portfolio__projects">
-          <a href="https://rafael-catarino.github.io/shopping-cart/">
-            <div class="portfolio__projects__div shopping-cart"></div>
-          </a>
 
-          <a href="https://rafael-catarino.github.io/projeto-pokedex/">
-            <div class="portfolio__projects__div pokedex"></div>
-          </a>
+          <div class="portfolio__projects__div shopping-cart"></div>
+          <dialog class="modal">
+            <h2>Projeto Shopping Cart</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/projeto-todo-list/">
-            <div class="portfolio__projects__div disappear--614 list"></div>
-          </a>
+          <div class="portfolio__projects__div pokedex"></div>
+          <dialog class="modal">
+            <h2>Projeto Pokedex</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/jogo-da-forca/">
-            <div class="portfolio__projects__div disappear--614 forca"></div>
-          </a>
+          <div class="portfolio__projects__div disappear--614 list"></div>
+          <dialog class="modal">
+            <h2>Projeto TodoList</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/projeto-pixel-art/">
-            <div
-              class="portfolio__projects__div disappear--614 disappear--914 pixel-art"
-            ></div>
-          </a>
+          <div class="portfolio__projects__div disappear--614 forca"></div>
+          <dialog class="modal">
+            <h2>Projeto Jogo da Forca</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/calculator/">
-            <div
-              class="portfolio__projects__div disappear--614 disappear--914 calculator"
-            ></div>
-          </a>
+          <div class="portfolio__projects__div disappear--614 disappear--914 pixel-art"></div>
+          <dialog class="modal">
+            <h2>Projeto Pixel Art</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/jokenpo/">
-            <div
-              class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 jokenpo"
-            ></div>
-          </a>
+          <div class="portfolio__projects__div disappear--614 disappear--914 calculator"></div>
+          <dialog class="modal">
+            <h2>Projeto Calculadora</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
 
-          <a href="https://rafael-catarino.github.io/conversor-de-numeros/">
-            <div
-              class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 conversor-de-numeros"
-            ></div>
-          </a>
+          <div class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 jokenpo"></div>
+          <dialog class="modal">
+            <h2>Projeto Jokenpo</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
+
+          <div class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 conversor-de-numeros"></div>
+          <dialog class="modal">
+            <h2>Projeto Conversor de Numeros</h2>
+            <button class="modal__close__button">X</button>
+            <div class="modal__description">
+              <video src="image/2023-11-23 12-03-27.mkv" 
+              controls 
+              width="200px"
+              ></video>
+              <div>
+                <p>
+                  Este projeto foi desenvolvido em HTML, CSS e JavaScript. Desenvolvi este projeto com o intuito de colocar em pratica o meu aprendizado adquirido com essas tecnologias.</p> 
+                <p>Foi um projeto muito desafiador e que aprendi muito ao desenvolvê-lo.
+                </p>
+                <div class="modal__description__buttons">
+                  <a id="github" href="https://github.com/Rafael-Catarino/shopping-cart">
+                    <img width="25px" src="image/github-svgrepo-com.svg" alt="logo GitHub"> GitHub
+                  </a>
+                  <a id="linkedin" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
+                    <img width="25px" src="image/linkedin-circundado-48.png" alt="logo linkedin"> Linkedin
+                  </a>
+                </div>
+                <a id="application" href="https://rafael-catarino.github.io/shopping-cart/">
+                  Teste a Aplicação
+                </a>
+              </div>
+            </div>
+          </dialog>
+
         </div>
 
         <a class="projects" href="projects.html">Mais...</a>

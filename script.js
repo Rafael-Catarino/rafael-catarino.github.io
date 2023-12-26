@@ -4,6 +4,7 @@ const title = document.querySelector(".home__title");
 const main = document.querySelector("main");
 const headerNav = document.querySelector(".header__nav");
 const headerA = document.querySelectorAll("a");
+const btnRadio = document.querySelectorAll(".btn-radio");
 
 for (let i = 0; i < headerA.length; i++) {
   headerA[i].addEventListener("click", (event) => {
@@ -44,54 +45,59 @@ headerNav.addEventListener("click", () => {
 /*----- Slider -----*/
 const passingTheSlider = () => {
   let count = 1;
+  let min = 10000;
   document.getElementById("radio1").checked = true;
 
   setInterval(() => {
     nextImage();
-  }, 10000);
+  }, min);
 
   function nextImage() {
     count++;
-    if (count >= 6) {
+    if (count > 4) {
       count = 1;
+    }
+
+    for (let i = 0; i < btnRadio.length; i++) {
+      btnRadio[i].addEventListener("click", (event) => {
+        const idDiv = event.target.id;
+        if (idDiv === "radio1") {
+          count = 1;
+          min = 10000;
+        } else if (idDiv === "radio2") {
+          count = 2;
+          min = 10000;
+        } else if (idDiv === "radio3") {
+          count = 3;
+          min = 10000;
+        } else if (idDiv === "radio4") {
+          cout = 4;
+          min = 10000;
+        }
+      });
     }
 
     document.getElementById("radio" + count).checked = true;
   }
 };
 
-/*------- Botão Tema --------*/
-// const inputCheckboxTheme = document.querySelector(".input__checkbox__theme");
+/* ----- popup projects ---- */
+const portfolio_projects = document.querySelectorAll(
+  ".portfolio__projects__div"
+);
+const modal = document.querySelectorAll(".modal");
+const close_modal = document.querySelectorAll(".modal__close__button");
 
-// inputCheckboxTheme.addEventListener("click", () => {
-//   if (inputCheckboxTheme.checked) {
-//     const sectionAll = document.querySelectorAll("section");
-//     sectionAll.forEach((section) => {
-//       section.style.backgroundColor = "var(--light-mode)";
-//       section.style.color = "var(--dark-mode)";
-//     });
-//     console.log("marcou");
-//   } else {
-//     console.log("desmarcou");
-//     document.querySelector("section").style.background = "var(--dark-mode)";
-//   }
-// });
+for (let i = 0; i < portfolio_projects.length; i++) {
+  portfolio_projects[i].addEventListener("click", () => {
+    modal[i].showModal();
+  });
+}
 
-// const buttonTheme = () => {
-//   if (inputCheckboxTheme.checked) {
-//     console.log("marcou");
-//   } else {
-//     console.log("desmarcou");
-//   }
-// };
+for (let i = 0; i < close_modal.length; i++) {
+  close_modal[i].addEventListener("click", () => {
+    modal[i].close();
+  });
+}
 
 window.onload = [passingTheSlider(), toWriteTittle()];
-
-/*------LENDO UM ARQUIVO DOC------*/
-// const pText = document.querySelector(".text");
-// const endPoint = "/curriculo/about-me.doc";
-// fetch(endPoint)
-//   .then((res) => res.text())
-//   .then((data) => {
-//     pText.innerText = data;
-//   });
