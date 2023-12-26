@@ -1,0 +1,82 @@
+.portfolio {
+  background-color: var(--dark-mode);
+  color: var(--light-gray);
+  text-align: center;
+  padding-top: 95px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__title {
+  color: var(--light-orange);
+}
+
+.portfolio__contents {
+  margin: 10px;
+  font-size: 0.7em;
+}
+
+.portfolio__projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio__projects__div {
+  background-color: var(--dark-mode);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  height: 190px;
+  margin: 13px;
+  width: 280px;
+}
+
+.shopping-cart {
+  background-image: url("../../image/shopping-cart.png");
+}
+
+.pokedex {
+  background-image: url("../../image/pokedex.png");
+}
+
+.jokenpo {
+  background-image: url("../../image/jokenpo.png");
+}
+
+.forca {
+  background-image: url("../../image/foto-projeto-forca.png");
+}
+
+.list {
+  background-image: url("../../image/todo-list.png");
+}
+
+.pixel-art {
+  background-image: url("../../image/projeto-pixel-art-mario.png");
+}
+
+.calculator {
+  background-image: url("../../image/calculator.png");
+}
+
+.conversor-de-numeros {
+  background-image: url("../../image/imagem-projeto.png");
+}
+
+.projects {
+  color: var(--light-gray);
+}
+
+.come-back {
+  color: var(--light-gray);
+}
+
+@media (max-width: 626px) {
+  .portfolio__projects {
+    justify-content: center;
+  }
+}
