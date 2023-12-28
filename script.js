@@ -42,6 +42,18 @@ headerNav.addEventListener("click", () => {
   headerButton.classList.remove("header__button--color");
 });
 
+/*----- button theme -----*/
+const headerButtonTheme = document.getElementById("header__button__theme");
+const section = document.querySelectorAll("section");
+const imgGitHub = document.querySelector("#gitHub");
+
+headerButtonTheme.addEventListener("click", () => {
+  headerButtonTheme.classList.toggle("dark");
+  for (let i = 0; i < section.length; i++) {
+    section[i].classList.toggle("dark");
+  }
+});
+
 /*----- Slider -----*/
 const passingTheSlider = () => {
   let count = 1;
