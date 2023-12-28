@@ -1,6 +1,6 @@
 .skills {
   align-items: center;
-  background-color: var(--dark-mode);;
+  background-color: var(--dark-mode);
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -40,6 +40,90 @@
 .skill__image {
   margin: 10px;
   width: 40px;
+}
+
+.html5 {
+  background-image: url(../image/HTML5-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.css3 {
+  background-image: url(../image/CSS3-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.javascript {
+  background-image: url(../image/JS-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.php {
+  background-image: url(../image/php.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.python {
+  background-image: url(../image/python-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.java {
+  background-image: url(../image/java-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.c {
+  background-image: url(../image/C-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cpp {
+  background-image: url(../image/Cpp-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.git {
+  background-image: url(../image/git-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.github {
+  background-image: url(../image/github-150px.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sql {
+  background-image: url(../image/sql.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arduino {
+  background-image: url(../image/arduino.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (max-width: 490px) {
