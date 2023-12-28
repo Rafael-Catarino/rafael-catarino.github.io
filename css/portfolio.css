@@ -182,6 +182,18 @@
     display: none;
   }
 
+  .modal {
+    padding: 12px;
+    width: 100%;
+  }
+
+  .modal .modal__description {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (max-width: 626px) {
     .portfolio__projects {
       justify-content: center;
