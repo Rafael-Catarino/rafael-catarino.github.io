@@ -1,9 +1,11 @@
-.portfolio {
+body {
   background-color: var(--dark-mode);
+}
+
+.portfolio {
   color: var(--light-gray);
   text-align: center;
   padding-top: 95px;
-  height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -73,6 +75,7 @@
 
 .come-back {
   color: var(--light-gray);
+  margin-bottom: 55px;
 }
 
 @media (max-width: 626px) {

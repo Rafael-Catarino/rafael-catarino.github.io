@@ -68,6 +68,7 @@
   height: 25px;
   cursor: pointer;
   position: absolute;
+  margin-right: 60px;
 }
 
 .header__button__theme .button__theme {
@@ -150,7 +151,7 @@ section.dark .contact__whatsapp {
   }
 
   .header__button__theme {
-    /* margin-right: 25px; */
+    margin-right: 0;
   }
 
   .header__titleAndButton {
