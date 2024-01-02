@@ -57,7 +57,7 @@ headerButtonTheme.addEventListener("click", () => {
 /*----- Slider -----*/
 const passingTheSlider = () => {
   let count = 1;
-  let min = 10000;
+  let min = 15000;
   document.getElementById("radio1").checked = true;
 
   setInterval(() => {
