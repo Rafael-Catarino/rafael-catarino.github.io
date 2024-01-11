@@ -1,3 +1,7 @@
+body {
+  background-color: var(--dark-mode);
+}
+
 .portfolio {
   background-color: var(--dark-mode);
   color: var(--light-gray);
@@ -38,6 +42,7 @@
 
 .cadastro-de-alunos {
   background-image: url("../image/cadastro-de-alunos.png");
+  background-position: top;
 }
 
 .shopping-cart {
@@ -70,10 +75,6 @@
 
 .conversor-de-numeros {
   background-image: url("../image/conversor-de-numero.png");
-}
-
-.disappear {
-  display: none;
 }
 
 .projects {
@@ -109,7 +110,7 @@
   color: var(--dark-orange);
 }
 
-.modal button {
+.modal .modal__close__button {
   background-color: transparent;
   border: none;
   color: var(--light-orange);
@@ -123,9 +124,10 @@
   transition: 0.1s all;
 }
 
-.modal button:hover {
+.modal .modal__close__button:hover {
   color: var(--dark-orange);
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .modal .modal__description {
@@ -134,13 +136,16 @@
   align-items: center;
 }
 
-.modal__description div {
+.modal__description .modal__container__description {
+  width: 50%;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__description__buttons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .modal__description a {
@@ -174,7 +179,7 @@
   color: var(--light-mode);
 }
 
-.modal video {
+.modal iframe {
   width: 50%;
   border-radius: 10px;
 }
@@ -200,6 +205,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .modal__description .modal__container__description {
+    width: 90%;
+  }
+
+  .modal iframe {
+    width: 90%;
   }
 
   @media (max-width: 626px) {
