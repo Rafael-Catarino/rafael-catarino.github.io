@@ -43,7 +43,6 @@
 }
 
 .skills__div__icon {
-  height: 100px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
