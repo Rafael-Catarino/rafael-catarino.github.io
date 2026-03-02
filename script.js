@@ -1,18 +1,56 @@
+const projects = [
+  {
+    id: 1,
+    title: "Shopping Cart",
+    image: "image/js-shopping-cart.png", // thumbnail do card
+    description:
+      "Aplicação de carrinho de compras desenvolvida com HTML, CSS e JavaScript puro, consumindo dados de uma API externa. O projeto permite buscar produtos, adicionar e remover itens do carrinho, calcular o valor total dinamicamente e tratar erros de requisição, aplicando conceitos de manipulação de DOM, programação assíncrona e organização modular de código.",
+    techs: ["HTML", "CSS", "JavaScript"],
+    linkGithub: "https://github.com/Rafael-Catarino/js-shopping-cart",
+    linkDemo: "https://rafael-catarino.github.io/js-shopping-cart/",
+  },
+  {
+    id: 2,
+    title: "Pokedex",
+    image: "image/js-pokedex.png",
+    description:
+      "Aplicação Pokedex desenvolvida com HTML, CSS e JavaScript, consumindo dados da PokeAPI. Implementa busca em tempo real, carregamento progressivo com infinite scroll e renderização dinâmica de componentes utilizando requisições assíncronas e Promise.all.",
+    techs: ["HTML", "CSS", "JavaScript"],
+    linkGithub: "https://github.com/Rafael-Catarino/js-pokedex",
+    linkDemo: "https://rafael-catarino.github.io/js-pokedex/",
+  },
+  {
+    id: 3,
+    title: "TodoList",
+    image: "image/js-todo-list.png",
+    description:
+      "Aplicação de lista de tarefas desenvolvida com HTML, CSS e JavaScript, permitindo adicionar, remover, concluir e reordenar tarefas. Os dados são persistidos no navegador utilizando localStorage, garantindo armazenamento mesmo após recarregar a página.",
+    techs: ["HTML", "CSS", "JavaScript"],
+    linkGithub: "https://github.com/Rafael-Catarino/projeto-todo-list",
+    linkDemo: "https://rafael-catarino.github.io/projeto-todo-list/",
+  },
+];
+
+const iconMap = {
+  JavaScript: "fa-brands fa-square-js",
+  HTML: "fa-brands fa-html5",
+  CSS: "fa-brands fa-css3-alt",
+  Python: "fa-brands fa-python",
+};
+
 /*------BOTÃO HAMBURGER HEADER------*/
 const headerButton = document.querySelector(".header__button");
 const title = document.querySelector(".home__title");
 const main = document.querySelector("main");
 const headerNav = document.querySelector(".header__nav");
-const headerA = document.querySelectorAll("a");
-const btnRadio = document.querySelectorAll(".btn-radio");
+const headerLinks = document.querySelectorAll("a");
 
-for (let i = 0; i < headerA.length; i++) {
-  headerA[i].addEventListener("click", (event) => {
-    const check = document.querySelector(".check");
+headerLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    document.querySelector(".check")?.classList.remove("check");
     event.target.classList.add("check");
-    check.classList.remove("check");
   });
-}
+});
 
 const toWriteTittle = () => {
   const arrTitle = title.innerHTML.split("");
@@ -25,93 +63,124 @@ const toWriteTittle = () => {
 };
 
 headerButton.addEventListener("click", () => {
-  const navHeader = document.querySelector(".header__nav");
-  navHeader.classList.toggle("header__nav--disappear");
+  headerNav.classList.toggle("header__nav--disappear");
   headerButton.classList.toggle("header__button--color");
 });
 
 main.addEventListener("click", () => {
-  const navHeader = document.querySelector(".header__nav");
-  navHeader.classList = "header__nav header__nav--disappear";
+  headerNav.classList = "header__nav header__nav--disappear";
   headerButton.classList.remove("header__button--color");
 });
 
 headerNav.addEventListener("click", () => {
-  const navHeader = document.querySelector(".header__nav");
-  navHeader.classList = "header__nav header__nav--disappear";
+  headerNav.classList = "header__nav header__nav--disappear";
   headerButton.classList.remove("header__button--color");
 });
 
 /*----- button theme -----*/
 const headerButtonTheme = document.getElementById("header__button__theme");
+const imageLight = document.querySelector(".theme__image.light");
+const imageDark = document.querySelector(".theme__image.dark");
 const section = document.querySelectorAll("section");
 const imgGitHub = document.querySelector("#gitHub");
 
 headerButtonTheme.addEventListener("click", () => {
   headerButtonTheme.classList.toggle("dark");
+  imageLight.classList.toggle("active");
+  imageDark.classList.toggle("active");
   for (let i = 0; i < section.length; i++) {
     section[i].classList.toggle("dark");
   }
 });
 
 /*----- Slider -----*/
-const passingTheSlider = () => {
-  let count = 1;
-  let min = 15000;
-  document.getElementById("radio1").checked = true;
+let count = 1;
+const total = 4;
+let intervalTime = 10000;
+let sliderInterval;
 
-  setInterval(() => {
-    nextImage();
-  }, min);
+const btnRadios = document.querySelectorAll(".btn-radio");
 
-  function nextImage() {
-    count++;
-    if (count > 4) {
-      count = 1;
-    }
+function startSlider() {
+  sliderInterval = setInterval(nextImage, intervalTime);
+}
 
-    for (let i = 0; i < btnRadio.length; i++) {
-      btnRadio[i].addEventListener("click", (event) => {
-        const idDiv = event.target.id;
-        if (idDiv === "radio1") {
-          count = 1;
-          min = 10000;
-        } else if (idDiv === "radio2") {
-          count = 2;
-          min = 10000;
-        } else if (idDiv === "radio3") {
-          count = 3;
-          min = 10000;
-        } else if (idDiv === "radio4") {
-          cout = 4;
-          min = 10000;
-        }
-      });
-    }
+function nextImage() {
+  count++;
+  if (count > total) count = 1;
+  updateSlider();
+}
 
-    document.getElementById("radio" + count).checked = true;
-  }
-};
+function updateSlider() {
+  document.getElementById("radio" + count).checked = true;
+}
 
-/* ----- popup projects ---- */
-const portfolio_projects = document.querySelectorAll(
-  ".portfolio__projects__div"
+btnRadios.forEach((radio, index) => {
+  radio.addEventListener("click", () => {
+    clearInterval(sliderInterval);
+    count = index + 1;
+    intervalTime = 15000;
+    startSlider();
+  });
+});
+
+/* ----- cards projects ---- */
+const portfolio_projects = document.querySelector(".portfolio__projects");
+const modal = document.querySelector(".modal");
+const project_title = document.querySelector(".modal h2");
+const project_description = document.querySelector(
+  ".modal__container__description p",
 );
-const iframe = document.querySelectorAll("iframe");
-const modal = document.querySelectorAll(".modal");
-const close_modal = document.querySelectorAll(".modal__close__button");
+const project_botton_github = document.querySelector(".portfolio_btn_github");
+console.log(project_botton_github);
 
-for (let i = 0; i < portfolio_projects.length; i++) {
-  portfolio_projects[i].addEventListener("click", () => {
-    modal[i].showModal();
+const project_botton_application = document.querySelector(
+  ".portfolio_btn_application",
+);
+const close_modal = document.querySelector(".modal__close__button");
+
+projects.forEach((project) => {
+  const divPotfolio = document.createElement("div");
+  divPotfolio.classList.add("portfolio__projects__div");
+  divPotfolio.style.backgroundImage = `url('${project.image}')`;
+
+  const overlay = document.createElement("div");
+  overlay.classList.add("portfolio__projects__overlay");
+
+  const techsContainer = document.createElement("div");
+  techsContainer.classList.add("portfolio__projects__techs");
+
+  project.techs.forEach((tech) => {
+    const icon = document.createElement("i");
+    icon.className = iconMap[tech] || "fa-solid fa-code";
+    techsContainer.appendChild(icon);
   });
-}
 
-for (let i = 0; i < close_modal.length; i++) {
-  close_modal[i].addEventListener("click", () => {
-    modal[i].close();
-    iframe[i].setAttribute("src", iframe[i].getAttribute("src"));
+  overlay.appendChild(techsContainer);
+  divPotfolio.appendChild(overlay);
+
+  divPotfolio.addEventListener("click", () => {
+    project_title.textContent = project.title;
+    project_description.textContent = project.description;
+    project_botton_github.href = project.linkGithub;
+    project_botton_application.href = project.linkDemo;
+    modal.showModal();
   });
-}
+  portfolio_projects.appendChild(divPotfolio);
+});
 
-window.onload = [passingTheSlider(), toWriteTittle()];
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.close();
+  }
+});
+
+close_modal.addEventListener("click", () => {
+  modal.close();
+});
+
+window.onload = () => {
+  startSlider();
+  updateSlider();
+  toWriteTittle();
+};

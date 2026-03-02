@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-.header__tittle__disappear-320px {
+.header__title__disappear-320px {
   display: none;
 }
 
@@ -27,7 +27,7 @@
   text-decoration: none;
 }
 
-.header__tittle--color {
+.header__title--color {
   color: var(--light-orange);
 }
 

@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-.header__tittle__disappear-320px {
+.header__title__disappear-320px {
   display: none;
 }
 
@@ -51,7 +51,7 @@
   text-decoration: none;
 }
 
-.header__tittle--color {
+.header__title--color {
   color: var(--light-orange);
 }
 
@@ -60,31 +60,40 @@
 }
 
 .header__button__theme {
-  background-color: var(--light-gray);
-  border-radius: 30px;
+  /* background-color: var(--light-gray); */
   right: 20px;
-  top: 23px;
-  width: 50px;
-  height: 25px;
+  top: 20px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   position: absolute;
   margin-right: 60px;
-}
-
-.header__button__theme .button__theme {
-  height: 25px;
-  width: 25px;
-  background-color: var(--black-border);
+  color: var(--light-orange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 50%;
-  transform: scale(0.9);
-  position: absolute;
-  left: 0;
-  transition: 0.5s;
+  overflow: hidden;
 }
 
-.header__button__theme.dark .button__theme {
-  left: 25px;
+.theme__image {
+  display: none;
+}
+
+.theme__image.active {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.light {
   background-color: var(--light-mode);
+}
+
+.dark {
+  background-color: var(--dark-mode);
 }
 
 section.dark {
@@ -101,7 +110,7 @@ section.dark .about-me__questions {
   color: var(--dark-mode);
 }
 
-section.dark .about-me__questions__tittle {
+section.dark .about-me__questions__title {
   color: var(--light-gray);
 }
 
@@ -203,11 +212,11 @@ section.dark .contact__whatsapp {
   }
 
   @media (max-width: 460px) {
-    .header__tittle {
+    .header__title {
       display: none;
     }
 
-    .header__tittle__disappear-320px {
+    .header__title__disappear-320px {
       display: block;
     }
 

@@ -5,11 +5,11 @@
   height: 100vh;
   flex-direction: column;
   justify-content: space-evenly;
-  padding-top: 55px;
+  padding-top: 90px;
   text-align: center;
 }
 
-.contact__tittle {
+.contact__title {
   color: var(--light-orange);
   margin-top: 30px;
 }
@@ -39,6 +39,54 @@
   display: block;
   margin: 5px;
   width: 30px;
+}
+
+.contact__icon__linkedin-in {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #0077d3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contact__icon__linkedin-in .fa-linkedin-in {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.contact__icon__whatsapp {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #27a618;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contact__icon__whatsapp .fa-whatsapp {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.contact__icon__gitHub {
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+
+.contact__icon__gitHub .fa-github {
+  color: #3e3e3e;
+  font-size: 28px;
 }
 
 .contact__message {

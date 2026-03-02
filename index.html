@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -13,35 +13,35 @@
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/skills.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <title>Portfólio de Programação</title>
   </head>
   <body>
     <!-- header -->
     <header class="header">
       <div class="header__titleAndButton">
-        <h1 class="header__tittle">
+        <h1 class="header__title">
           <a
-            class="header__tittle__link header__link"
+            class="header__title__link header__link"
             target="_blank"
             href="https://github.com/Rafael-Catarino"
           >
-            Rafael<span class="header__tittle--color">Catarino</span>
+            Rafael<span class="header__title--color">Catarino</span>
           </a>
         </h1>
-        <h1 class="header__tittle__disappear-320px">
+        <h2 class="header__title__disappear-320px">
           <a
-            class="header__tittle__link header__link"
+            class="header__title__link header__link"
             target="_blank"
             href="https://github.com/Rafael-Catarino"
           >
-            R<span class="header__tittle--color">C</span>
+            R<span class="header__title--color">C</span>
           </a>
-        </h1>
+        </h2>
         <button class="header__button">&#9776;</button>
-        <!-- Botão de mudar tema -->
-        <div class="header__button__theme" id="header__button__theme">
-          <div class="button__theme"></div>
-        </div>
       </div>
       <nav class="header__nav header__nav--disappear">
         <ul class="header__list">
@@ -75,6 +75,14 @@
           </li>
         </ul>
       </nav>
+      <!-- Botão de mudar tema -->
+      <div class="header__button__theme" id="header__button__theme">
+        <div class="theme__image light active">
+          <i class="fa-solid fa-sun"></i>
+        </div>
+
+        <div class="theme__image dark"><i class="fa-solid fa-moon"></i></div>
+      </div>
     </header>
     <!-- Home -->
     <main>
@@ -83,9 +91,14 @@
           <p>Olá, me chamo</p>
           <h1 class="home__title">Rafael dos Santos Catarino.</h1>
           <p>
-            Neste portfólio você encontra alguns dos projetos que desenvolvi em
-            cursos e de forma independente.
+            Desenvolvedor Front-End focado na criação de interfaces modernas,
+            responsivas e de alta performance. Aqui você encontra projetos que
+            demonstram minha evolução técnica e aplicação prática de conceitos
+            reais.
           </p>
+          <h5 class="home__subtitle">
+            Front-End Developer | JavaScript | React
+          </h5>
           <div class="container__home__button">
             <a
               class="home__button"
@@ -94,11 +107,7 @@
             >
               <div class="home__button__div">
                 <button class="home__button__linkedin">
-                  <img
-                    class="home__button__image"
-                    src="image/linkedin-64.png"
-                    alt="icone-linkedin"
-                  />
+                  <i class="fab fa-linkedin home__button__image"></i>
                   <span class="span-button">LinkedIn</span>
                 </button>
               </div>
@@ -110,11 +119,7 @@
             >
               <div class="home__button__div">
                 <button class="home__button__github">
-                  <img
-                    class="home__button__image"
-                    src="image/github-64.png"
-                    alt=""
-                  />
+                  <i class="fa-brands fa-github home__button__image"></i>
                   <span class="span-button">GitHub</span>
                 </button>
               </div>
@@ -131,7 +136,7 @@
       </section>
       <!-- About me -->
       <section id="container__about-me" class="about-me">
-        <h2 class="about-me__tittle">Sobre Mim:</h2>
+        <h2 class="about-me__title">Sobre Mim:</h2>
         <div class="container__slider">
           <div class="about-me__text">
             <!--Radio Buttons-->
@@ -163,15 +168,15 @@
             <!--Slider-->
             <div class="slide first">
               <div class="about-me__questions">
-                <h3 class="about-me__questions__tittle">De onde sou?</h3>
+                <h3 class="about-me__questions__title">De onde sou?</h3>
                 <div class="about-me__photography">
                   <img
                     src="./image/cristo-redentor-Bangu-2.jpeg"
-                    alt="Cristo Redentor"
+                    alt="Foto do Cristo Redentor"
                   />
                   <img
                     src="./image/Bangu-Shopping-Copia-scaled-aspect-ratio-800-600-scaled-b.webp"
-                    alt="shopping Bangu"
+                    alt="Foto do Shopping Bangu"
                   />
                 </div>
                 <p>Sou Natural de Bangu, Rio de Janeiro, Brasil.</p>
@@ -179,7 +184,7 @@
             </div>
             <div class="slide">
               <div class="about-me__questions">
-                <h3 class="about-me__questions__tittle">Minha formação:</h3>
+                <h3 class="about-me__questions__title">Minha formação:</h3>
                 <div class="about-me__photography_2">
                   <div id="graduation"></div>
                   <div id="university"></div>
@@ -187,59 +192,77 @@
                   <div id="technology"></div>
                 </div>
                 <p>
-                  Sou formado em Administração de Empresa e atualmente estou
-                  passando por uma transição de carreira fazendo o curso de
-                  Análise e Desenvolvimento de Sistema pela Universidade Estácio
-                  de Sá.
+                  Sou graduado em ADS e Administração, o que me permite unir uma
+                  visão estratégica de negócios ao desenvolvimento técnico. Com
+                  experiência como Fullstack, hoje foco meu aprimoramento no
+                  Front-end, criando interfaces modernas, responsivas e de alta
+                  performance.
                 </p>
               </div>
             </div>
             <div class="slide">
               <div class="about-me__questions">
-                <h3 class="about-me__questions__tittle">
+                <h3 class="about-me__questions__title">
                   Tecnologias que conheço:
                 </h3>
-                <img
-                  class="skill__image"
-                  src="image/HTML5-150px.png"
-                  alt="image html5"
-                />
-                <img
-                  class="skill__image"
-                  src="image/CSS3-150px.png"
-                  alt="image css3"
-                />
-                <img
-                  class="skill__image"
-                  src="image/JS-150px.png"
-                  alt="image javascript"
-                />
-                <img class="skill__image" src="image/php.png" alt="image php" />
+                <div class="about-me__div__techs">
+                  <div class="skills__div__icon">
+                    <p>HTML</p>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="skills__div__icon">
+                    <p>CSS</p>
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+                  <div class="skills__div__icon">
+                    <i class="fa-brands fa-square-js"></i>
+                  </div>
+                  <div class="skills__div__icon">
+                    <i class="fa-brands fa-react"></i>
+                    <p class="fa-react_p">React</p>
+                  </div>
+                  <div class="skills__div__icon">
+                    <img
+                      class="skill__image"
+                      src="image/php.png"
+                      alt="image php"
+                    />
+                  </div>
+                </div>
                 <p>
-                  Tenho conhecimento básico nas linguagens: JavaScript, PHP,
-                  Python, C, C++ e Java O.O.<br />
-                  Também possuo conhecimento em: HTML5, CSS3, Git e GitHub,
-                  Sistema Linux, Redes de computadores, Segurança da Informação,
-                  Computação em nuvem, Paradigmas de linguagens de programação e
-                  Pacote Office
+                  No meu dia a dia, utilizo JavaScript (ES6+), HTML5, CSS3 e
+                  Bootstrap, integrando-os ao PHP e MySQL para construir
+                  sistemas sólidos e consumir APIs. Atualmente, dedico-me ao
+                  ecossistema React, explorando hooks e componentização para
+                  elevar o nível das minhas entregas, sempre utilizando Git para
+                  um controle de versão rigoroso.
                 </p>
               </div>
             </div>
             <div class="slide">
               <div class="about-me__questions">
-                <h3 class="about-me__questions__tittle">
+                <h3 class="about-me__questions__title">
                   O que gosto de fazer nas horas vagas?
                 </h3>
                 <div class="about-me__photography_3">
-                  <img src="image/trail.jpg" alt="" />
-                  <img src="image/beach.jpg" alt="" />
-                  <img src="image/book.jpg" alt="" />
+                  <img src="image/trail.jpg" alt="Foto minha na trilha" />
+                  <img src="image/beach.jpg" alt="Foto da praia" />
+                  <img src="image/book.jpg" alt="Foto de Livros" />
                 </div>
                 <div class="about-me__photography_3">
-                  <img src="image/movie.jpg" alt="" />
-                  <img src="image/bike.jpg" alt="" />
-                  <img src="image/anime.jpg" alt="" />
-                  <img src="image/physical_exercise.jpg" alt="" />
+                  <img
+                    src="image/movie.jpg"
+                    alt="Foto do Filme Home de Ferro"
+                  />
+                  <img src="image/bike.jpg" alt="Foto de uma bicicleta" />
+                  <img
+                    src="image/anime.webp"
+                    alt="Foto da capa de Dragon Ball Z "
+                  />
+                  <img
+                    src="image/physical_exercise.jpg"
+                    alt="Foto de uma barra"
+                  />
                 </div>
                 <p>
                   Eu gosto de fazer trilha, ir a praia, estudar, ver filmes e
@@ -265,7 +288,7 @@
             <!-- <label for="radio5" class="manual_btn"></label> -->
           </div>
         </div>
-        <div class="aboute-me__curriculum-vitae">
+        <div class="about-me__curriculum-vitae">
           <a href="curriculo/curriculo.pdf" download="curriculo.pdf"
             >Curriculum Vitae</a
           >
@@ -273,48 +296,39 @@
       </section>
       <!-- skills -->
       <section class="skills">
-        <h3 class="skills__tittle">Skills:</h3>
+        <h3 class="skills__title">Skills:</h3>
         <div class="container__skills__image">
           <div>
-            <div>
-              <div class="skill__image html5"></div>
+            <div class="skills__div__icon">
+              <p>HTML</p>
+              <i class="fa-brands fa-html5"></i>
             </div>
-            <div>
-              <div class="skill__image css3"></div>
+            <div class="skills__div__icon">
+              <p>CSS</p>
+              <i class="fa-brands fa-css3-alt"></i>
             </div>
-            <div>
-              <div class="skill__image javascript"></div>
+            <div class="skills__div__icon">
+              <i class="fa-brands fa-square-js"></i>
             </div>
-            <div>
+            <div class="skills__div__icon">
+              <i class="fa-brands fa-react"></i>
+              <p class="fa-react_p">React</p>
+            </div>
+          </div>
+          <div>
+            <div class="skills__div__icon">
               <div class="skill__image php"></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div class="skill__image python"></div>
-            </div>
-            <div>
-              <div class="skill__image java"></div>
-            </div>
-            <div>
-              <div class="skill__image c"></div>
-            </div>
-            <div>
-              <div class="skill__image cpp"></div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div class="skill__image git"></div>
-            </div>
-            <div>
-              <div class="skill__image github"></div>
             </div>
             <div>
               <div class="skill__image sql"></div>
             </div>
-            <div>
-              <div class="skill__image arduino"></div>
+            <div class="skills__div__icon__git">
+              <i class="fa-brands fa-git-alt"></i>
+              <i class="fa-brands fa-git"></i>
+            </div>
+            <div class="skills__div__icon">
+              <i class="fa-brands fa-github"></i>
+              <p>GitHub</p>
             </div>
           </div>
         </div>
@@ -323,446 +337,31 @@
       <section id="container__portfolio" class="portfolio">
         <h2 class="portfolio__title">Projetos</h2>
         <p class="portfolio__contents">*Clique, para saber mais...</p>
-
         <div class="portfolio__projects">
-          <div class="portfolio__projects__div cadastro-de-alunos"></div>
           <dialog class="modal">
-            <h2>Cadastro de Alunos</h2>
+            <h2></h2>
             <button class="modal__close__button">X</button>
             <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/qwze05-e-YY?si=TQI9a1SYLhaWa1G1"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
               <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em Python, com o modulo Tkinter
-                  e o Banco de dados SqlLite. Desenvolvi este projeto com o
-                  aprendizado adquirido na disciplina de DESENVOLVIMENTO RÁPIDO
-                  DE APLICAÇÕES EM PYTHON para praticar o que vinha aprendendo
-                  com essa matéria.
-                </p>
+                <p></p>
                 <div class="modal__description__buttons">
                   <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/cadastro-de-aluno"
+                    class="portfolio_btn_github"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
+                    <i class="fa-brands fa-github"></i>
                   </a>
                   <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
+                    class="portfolio_btn_application"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
+                    <i class="fa fa-link" aria-hidden="true"></i>
                   </a>
                 </div>
-                <!-- <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/shopping-cart/"
-                >
-                  Teste a Aplicação
-                </a> -->
-              </div>
-            </div>
-          </dialog>
-
-          <div class="portfolio__projects__div shopping-cart"></div>
-          <dialog class="modal">
-            <h2>Shopping Cart</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/M5Wtsj4tUnQ?si=HmW16gFSHFMSbXcD"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/shopping-cart"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/shopping-cart/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div class="portfolio__projects__div disappear--614 pokedex"></div>
-          <dialog class="modal">
-            <h2>Pokedex</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/8ojkNLD92WA?si=10Q55ZET5QzVgrOY"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/projeto-pokedex"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/projeto-pokedex/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div class="portfolio__projects__div disappear--614 list"></div>
-          <dialog class="modal">
-            <h2>TodoList</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/aiT3cv0gICw?si=xbMt_ythq7izTb2u"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/projeto-todo-list"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/projeto-todo-list/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div
-            class="portfolio__projects__div disappear--614 disappear--914 forca"
-          ></div>
-          <dialog class="modal">
-            <h2>Jogo da Forca</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/teWhjVy_oXE?si=6zDy9AlPRcxe1BBx"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/jogo-da-forca"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/jogo-da-forca/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div
-            class="portfolio__projects__div disappear--614 disappear--914 pixel-art"
-          ></div>
-          <dialog class="modal">
-            <h2>Pixel Art</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/inBI1kxEQyA?si=0s4HJ1hfkBgZoZOP"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/projeto-pixel-art"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/projeto-pixel-art/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div
-            class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 conversor-de-numeros"
-          ></div>
-          <dialog class="modal">
-            <h2>Conversor de Numeros</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/HOam1yBEfN4?si=hw89fi4uZDBn-fdm"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto durante uma entrevista de estágio para
-                  desenvolvimento WEB.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/conversor-de-numeros"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/conversor-de-numeros/"
-                >
-                  Teste a Aplicação
-                </a>
-              </div>
-            </div>
-          </dialog>
-
-          <div
-            class="portfolio__projects__div disappear--614 disappear--914 disappear--1200 jokenpo"
-          ></div>
-          <dialog class="modal">
-            <h2>Jokenpo</h2>
-            <button class="modal__close__button">X</button>
-            <div class="modal__description">
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/mCDN0qJI2Q4?si=CPV0a1InrnwONmzq"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
-              <div class="modal__container__description">
-                <p>
-                  Este projeto foi desenvolvido em HTML, CSS e JavaScript.
-                  Desenvolvi este projeto com o intuito de colocar em pratica o
-                  meu aprendizado adquirido com essas tecnologias.
-                </p>
-                <div class="modal__description__buttons">
-                  <a
-                    id="github"
-                    href="https://github.com/Rafael-Catarino/jokenpo"
-                  >
-                    <img
-                      width="25px"
-                      src="image/github-svgrepo-com.svg"
-                      alt="logo GitHub"
-                    />
-                    GitHub
-                  </a>
-                  <a
-                    id="linkedin"
-                    href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/"
-                  >
-                    <img
-                      width="25px"
-                      src="image/linkedin-circundado-48.png"
-                      alt="logo linkedin"
-                    />
-                    Linkedin
-                  </a>
-                </div>
-                <a
-                  id="application"
-                  href="https://rafael-catarino.github.io/jokenpo/"
-                >
-                  Teste a Aplicação
-                </a>
               </div>
             </div>
           </dialog>
@@ -771,7 +370,7 @@
       </section>
       <!-- Contato -->
       <section id="container__contact" class="contact">
-        <h2 class="contact__tittle">Contatos</h2>
+        <h2 class="contact__title">Contatos</h2>
         <div class="contact__social-media">
           <div>
             <a
@@ -780,11 +379,10 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                class="contact__img"
-                src="image/github-48.png"
-                alt="icone do github"
-              />github.com/Rafael-Catarino
+              <div class="contact__icon__gitHub">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <p>github.com/Rafael-Catarino</p>
             </a>
             <a
               class="contact__linkedin"
@@ -792,18 +390,15 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                class="contact__img"
-                src="image/linkedin-circundado-48.png"
-                alt="icone do linkedin"
-              />linkedin/Rafael-Catarino
+              <div class="contact__icon__linkedin-in">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </div>
+              <p>linkedin/Rafael-Catarino</p>
             </a>
             <a href="tel:+552199246-1605" class="contact__whatsapp">
-              <img
-                class="contact__img"
-                src="image/whatsapp.png"
-                alt="icone do whatsapp"
-              />
+              <div class="contact__icon__whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
               <p>(21) 99246-1605</p>
             </a>
             <a href="mailto:rafaelscatarino@hotmail.com" class="contact__email">
@@ -827,7 +422,6 @@
                   id="footer-email"
                   type="email"
                   name="email"
-                  id="campus-email"
                   placeholder="Digite seu E-mail"
                   required
                 />
@@ -839,7 +433,6 @@
                   id="footer-name"
                   type="text"
                   name="nome"
-                  id="campus-nome"
                   placeholder="Digite seu nome"
                   required
                 />
@@ -849,7 +442,7 @@
                 <textarea
                   class="contact__message__textarea"
                   name="mensagem"
-                  id="compus-message"
+                  id="footer-message"
                   placeholder="Digite o texto"
                   cols="26"
                   rows="10"
