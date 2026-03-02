@@ -96,7 +96,7 @@ headerButtonTheme.addEventListener("click", () => {
 /*----- Slider -----*/
 let count = 1;
 const total = 4;
-let intervalTime = 15000;
+let intervalTime = 10000;
 let sliderInterval;
 
 const btnRadios = document.querySelectorAll(".btn-radio");
