@@ -249,6 +249,10 @@
     width: 330px;
   }
 
+  .about-me__questions .about-me__div__techs {
+    gap: 15px;
+  }
+
   .navigation-auto {
     margin-top: 5px;
   }
