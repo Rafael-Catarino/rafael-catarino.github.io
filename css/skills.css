@@ -3,11 +3,11 @@
   background-color: var(--dark-mode);
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding-top: 40px;
+  height: 450px;
+  padding-top: 90px;
 }
 
-.skills__tittle {
+.skills__title {
   color: var(--light-orange);
   padding: 20px;
 }
@@ -42,25 +42,96 @@
   width: 40px;
 }
 
-.html5 {
-  background-image: url(../image/HTML5-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.skills__div__icon {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.css3 {
-  background-image: url(../image/CSS3-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.skills__div__icon__git {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 4px;
+  font-size: 30px;
 }
 
-.javascript {
-  background-image: url(../image/JS-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+.skills__div__icon p {
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  color: black;
+  margin: 0;
+}
+
+.skills__div__icon .fa-brands {
+  font-size: 50px;
+}
+
+.fa-html5 {
+  background: linear-gradient(
+    to right,
+    #e34f24 0%,
+    #e34f24 50%,
+    #f1672b 50%,
+    #e34f24 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
+.fa-css3-alt {
+  background: linear-gradient(to right, #0f73b8, #2dace1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
+.fa-square-js {
+  background: linear-gradient(to right, #e3a127, #efbd24);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
+
+.fa-react {
+  color: #70e2fc;
+}
+
+.fa-react_p {
+  color: #70e2fc !important;
+}
+
+.fa-php {
+  color: #320869;
+}
+
+.fa-git-alt {
+  color: #f05032;
+}
+
+.fa-git {
+  color: #493500;
+}
+
+.skills__div__icon .fa-github {
+  color: black;
+  font-size: 40px !important;
+}
+
+.skill__image {
+  margin: 10px;
+  width: 50px;
 }
 
 .php {
@@ -70,57 +141,8 @@
   background-position: center;
 }
 
-.python {
-  background-image: url(../image/python-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.java {
-  background-image: url(../image/java-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.c {
-  background-image: url(../image/C-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cpp {
-  background-image: url(../image/Cpp-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.git {
-  background-image: url(../image/git-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.github {
-  background-image: url(../image/github-150px.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .sql {
   background-image: url(../image/sql.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.arduino {
-  background-image: url(../image/arduino.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

@@ -26,6 +26,7 @@ body {
 }
 
 .portfolio__projects__div {
+  position: relative;
   background-color: var(--dark-mode);
   background-position: center;
   background-repeat: no-repeat;
@@ -34,47 +35,40 @@ body {
   height: 190px;
   margin: 13px;
   width: 280px;
-}
-
-.portfolio__projects__div:hover {
   cursor: pointer;
+  overflow: hidden;
 }
 
-.cadastro-de-alunos {
-  background-image: url("../image/cadastro-de-alunos.png");
-  background-position: top;
+.portfolio__projects__overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
-.shopping-cart {
-  background-image: url("../image/shopping-cart.png");
+.portfolio__projects__div:hover .portfolio__projects__overlay {
+  opacity: 1;
 }
 
-.pokedex {
-  background-image: url("../image/pokedex.png");
+.portfolio__projects__techs {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-.jokenpo {
-  background-image: url("../image/jokenpo.png");
+.portfolio__projects__techs i {
+  font-size: 48px;
+  color: white;
+  transform: translateY(10px);
+  transition: transform 0.4s ease;
 }
 
-.forca {
-  background-image: url("../image/foto-projeto-forca.png");
-}
-
-.list {
-  background-image: url("../image/todo-list.png");
-}
-
-.pixel-art {
-  background-image: url("../image/projeto-pixel-art-mario.png");
-}
-
-.calculator {
-  background-image: url("../image/calculator.png");
-}
-
-.conversor-de-numeros {
-  background-image: url("../image/conversor-de-numero.png");
+.portfolio__projects__div:hover .portfolio__projects__techs i {
+  transform: translateY(0);
 }
 
 .projects {
@@ -90,14 +84,12 @@ body {
   border-radius: 10px;
   background-color: var(--dark-mode);
   box-shadow: 2px 2px 15px 2px var(--header-transparent);
-  width: 80%;
+  width: 50%;
   padding: 12px;
-
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: var(--light-mode);
 }
 
@@ -131,16 +123,18 @@ body {
 }
 
 .modal .modal__description {
-  padding: 6px;
+  border-top: 1px solid var(--light-gray);
+  padding: 12px;
   display: flex;
   align-items: center;
 }
 
 .modal__description .modal__container__description {
-  width: 50%;
+  /* width: 50%; */
   margin: 10px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 
 .modal__description__buttons {
@@ -150,38 +144,31 @@ body {
 
 .modal__description a {
   margin: 12px;
-  padding: 0 8px;
+  padding: 12px;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  background-color: var(--header);
 }
 
-.modal__description__buttons #github {
-  background-color: var(--black-border);
-  border: 1px solid var(--black-border);
+.modal__description a:hover {
+  transform: scale(1.05);
+}
+
+.modal__description__buttons i {
   color: var(--light-mode);
+  font-size: 20px;
 }
 
-.modal__description__buttons #linkedin {
-  background-color: rgb(0, 120, 212);
-  border: 1px solid rgb(0, 120, 212);
-  color: var(--light-mode);
-}
-
-.modal__description #application {
+.modal__description .application {
   width: 200px;
   margin: 0 auto;
-  padding: 4px;
+  padding: 8px 1px;
   background-color: var(--dark-orange);
   border: 1px solid var(--dark-orange);
   color: var(--light-mode);
-}
-
-.modal iframe {
-  width: 50%;
-  border-radius: 10px;
 }
 
 @media (max-width: 1199px) {
@@ -208,10 +195,6 @@ body {
   }
 
   .modal__description .modal__container__description {
-    width: 90%;
-  }
-
-  .modal iframe {
     width: 90%;
   }
 

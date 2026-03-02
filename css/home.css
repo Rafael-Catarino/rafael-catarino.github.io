@@ -41,6 +41,11 @@
   }
 }
 
+.home__subtitle {
+  text-align: center;
+  color: var(--light-gray);
+}
+
 .container__home__button {
   align-items: center;
   align-content: center;
@@ -75,8 +80,9 @@
   cursor: pointer;
   font-size: medium;
   justify-content: space-evenly;
-  padding: 2px;
+  padding: 12px;
   width: 130px;
+  font-weight: 600;
 }
 
 /* class que da cor aos dois botões da home */
@@ -88,8 +94,10 @@
 }
 
 .home__button__image {
-  height: 23px;
-  width: 23px;
+  background: linear-gradient(to top, var(--purple), var(--blue));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .home__photograph__div1 {
