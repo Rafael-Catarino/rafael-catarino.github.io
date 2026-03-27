@@ -1,6 +1,16 @@
 const projects = [
   {
     id: 1,
+    title: "Hero Deck Builder",
+    image: "image/react-hero-deck-builder.webp",
+    description:
+      "Hero Deck Builder é uma aplicação desenvolvida em React inspirada no estilo Super Trunfo, onde o usuário pode criar cartas personalizadas com personagens da Marvel e da DC. O projeto permite criar, editar e excluir cartas, além de exibir um preview em tempo real durante o preenchimento dos atributos. A aplicação foi construída com foco em gerenciamento de estado, componentização e boas práticas de organização de interface.",
+    techs: ["React"],
+    linkGithub: "https://github.com/Rafael-Catarino/react-hero-cards",
+    linkDemo: "https://react-hero-cards.vercel.app/",
+  },
+  {
+    id: 2,
     title: "Shopping Cart",
     image: "image/js-shopping-cart.png",
     description:
@@ -10,7 +20,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/js-shopping-cart/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Pokedex",
     image: "image/js-pokedex.png",
     description:
@@ -20,7 +30,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/js-pokedex/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Todo-List",
     image: "image/js-todo-list.png",
     description:
@@ -30,7 +40,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/projeto-todo-list/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Jogo da Forca",
     image: "image/js-forca.png",
     description:
@@ -40,7 +50,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/jogo-da-forca/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Pixel Art",
     image: "image/js-pixel-art.png",
     description:
@@ -50,7 +60,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/projeto-pixel-art/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Conversor de Números",
     image: "image/js-conversor-de-numeros.png",
     description:
@@ -60,7 +70,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/conversor-de-numeros/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Jokenpo",
     image: "image/js-jokenpo.png",
     description:
@@ -70,7 +80,7 @@ const projects = [
     linkDemo: "https://rafael-catarino.github.io/jokenpo/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Cadastro de Alunos",
     image: "image/py-cadastro-de-alunos.png",
     description:
@@ -86,6 +96,7 @@ const iconMap = {
   HTML: "fa-brands fa-html5",
   CSS: "fa-brands fa-css3-alt",
   Python: "fa-brands fa-python",
+  React: "fa-brands fa-react",
 };
 
 /* ----- cards projects ---- */
